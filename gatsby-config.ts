@@ -8,7 +8,8 @@ const config: GatsbyConfig = {
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-minify-classnames",
-    "@sentry/gatsby",
+    "gatsby-plugin-react-helmet",
+    // "@sentry/gatsby",
     // {
     //   resolve: "gatsby-plugin-google-gtag",
     //   options: {

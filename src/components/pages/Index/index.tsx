@@ -10,7 +10,6 @@ const Index = () => {
   const theme = useAppSelector((state) => state.app.theme)
 
   const switchTheme = () => {
-    console.log(theme)
     dispatch(AppActions.THEME_UPDATE_SAGA(theme === "default" ? "dark" : "default"))
   }
 
