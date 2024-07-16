@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Satoshi';
+  font-weight: 400;
+  font-style: normal;
+  src: url("files/Satoshi-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  font-weight: 700;
+  font-style: normal;
+  src: url("files/Satoshi-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  font-weight: 900;
+  font-style: normal;
+  src: url("files/Satoshi-Black.ttf") format("truetype");
+}
+
+/* @font-face {
+  font-family: 'Clash';
+  font-weight: 400;
+  font-style: normal;
+  src: url("files/ClashDisplay-Bold.ttf") format("truetype");
+} */
+
+
+@font-face {
+  font-family: 'Archivo';
+  font-weight: 400;
+  font-style: normal;
+  src: url("files/ArchivoBlack-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'XrayIcons';
+  src:
+    url('files/Xray-Icons.ttf') format('truetype');
+  font-style: normal;
+  font-display: block;
+}
+
+@import url("files/Xray-Icons.css");

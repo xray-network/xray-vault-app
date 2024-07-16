@@ -1,0 +1,32 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-skeleton {
+    &-title,
+    &-paragraph > li {
+      background-image: linear-gradient(
+        90deg,
+        rgba($dark-gray-2, 0.12) 25%,
+        rgba($dark-gray-2, 0.25) 37%,
+        rgba($dark-gray-2, 0.12) 63%
+      ) !important;
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-skeleton {
+      &-title,
+      &-paragraph > li {
+        background-image: linear-gradient(
+          90deg,
+          rgba($dark-gray-2, 0.12) 25%,
+          rgba($dark-gray-2, 0.25) 37%,
+          rgba($dark-gray-2, 0.12) 63%
+        ) !important;
+      }
+    }
+  }
+}

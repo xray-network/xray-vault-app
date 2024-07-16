@@ -1,0 +1,113 @@
+@import "@/styles/mixins";
+
+html {
+  overflow: hidden;
+  font-size: 16px;
+  scroll-behavior: smooth;
+
+  @media (max-width: 380px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $base-font-family;
+
+  &::-webkit-scrollbar {
+    background: transparent;
+    width: 0px;
+  }
+}
+
+a,
+.link {
+  text-decoration: none;
+  color: $blue;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+[data-disable-transitions="true"] {
+  *,
+  ::before,
+  ::after {
+    transition: none !important;
+  }
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark;
+  font-weight: 700;
+}
+
+// dark theme
+[data-theme="dark"] {
+  &:root {
+    color-scheme: dark;
+  }
+
+  body {
+    background: $dark;
+  }
+
+  a,
+  .link {
+    color: $blue-light;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  ::placeholder {
+    color: $dark-gray-3 !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $white;
+  }
+}
+
+.layout {
+  max-width: 480px;
+  padding: rem(30) rem(20);
+  background: $dark url("/images/bg.png") no-repeat top center;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100vh - rem(100));
+
+  &::-webkit-scrollbar {
+    background: transparent;
+    width: 0px;
+  }
+
+  &-scroll-disabled {
+    overflow-y: hidden;
+  }
+}

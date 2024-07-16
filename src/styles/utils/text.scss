@@ -1,0 +1,105 @@
+@import "@/styles/mixins";
+
+.text {
+  &-muted {
+    color: $gray-5 !important;
+  }
+
+  &-danger {
+    color: $danger !important;
+  }
+
+  &-blue {
+    color: $blue;
+  }
+
+  &-success {
+    color: $success;
+  }
+
+  &-orange {
+    color: $orange;
+  }
+
+  &-mono {
+    color: $dark !important;
+  }
+
+  &-muted-mono {
+    color: $gray-4 !important;
+  }
+
+  &-nowrap {
+    white-space: nowrap !important;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+}
+
+a {
+  .text {
+    &-mono {
+      transition: color 0.2s ease-in-out;
+    }
+  }
+
+  &:hover {
+    .text {
+      &-mono {
+        color: $dark-gray-3 !important;
+      }
+    }
+  }
+}
+
+.text {
+  &-capitalize {
+    text-transform: capitalize;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .text {
+    &-blue {
+      color: $blue-light;
+    }
+
+    &-mono {
+      color: $white !important;
+    }
+
+    &-muted-mono {
+      color: $dark-gray-2 !important;
+    }
+  }
+
+  a {
+    &:hover {
+      .text {
+        &-mono {
+          color: $dark-gray-1 !important;
+        }
+      }
+    }
+  }
+}

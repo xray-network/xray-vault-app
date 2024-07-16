@@ -1,0 +1,54 @@
+@import "@/styles/mixins";
+
+.font {
+  &-size {
+    &-10 {
+      font-size: rem(10);
+    }
+    &-12 {
+      font-size: rem(12);
+    }
+    &-14 {
+      font-size: rem(14);
+    }
+    &-15 {
+      font-size: rem(15);
+    }
+    &-16 {
+      font-size: rem(16);
+    }
+    &-18 {
+      font-size: rem(18);
+    }
+    &-21 {
+      font-size: rem(21);
+    }
+    &-24 {
+      font-size: rem(24);
+    }
+    &-27 {
+      font-size: rem(27);
+    }
+    &-28 {
+      font-size: rem(28);
+    }
+    &-36 {
+      font-size: rem(36);
+    }
+    &-46 {
+      font-size: rem(46);
+    }
+  }
+
+  &-weight {
+    &-normal {
+      font-weight: normal;
+    }
+    &-bold {
+      font-weight: bold;
+    }
+    &-bolder {
+      font-weight: bolder;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "@/styles/mixins";
+
+.xray {
+  &-btn {
+    &-round {
+      border-radius: rem(50);
+    }
+  }
+}

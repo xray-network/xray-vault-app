@@ -1,0 +1,101 @@
+@import "@/styles/mixins";
+
+.h {
+  &-100p {
+    height: 100%;
+  }
+
+  &-10 {
+    height: rem(10);
+  }
+
+  &-20 {
+    height: rem(20);
+  }
+
+  &-30 {
+    height: rem(30);
+  }
+
+  &-40 {
+    height: rem(40);
+  }
+
+  &-50 {
+    height: rem(50);
+  }
+
+  &-60 {
+    height: rem(60);
+  }
+
+  &-70 {
+    height: rem(70);
+  }
+
+  &-80 {
+    height: rem(80);
+  }
+
+  &-90 {
+    height: rem(90);
+  }
+
+  &-100 {
+    height: rem(100);
+  }
+
+  &-200 {
+    height: rem(200);
+  }
+
+  &-300 {
+    height: rem(300);
+  }
+
+  &-400 {
+    height: rem(400);
+  }
+
+  &-500 {
+    height: rem(500);
+  }
+
+  &-600 {
+    height: rem(600);
+  }
+
+  &-1000 {
+    height: rem(1000);
+  }
+}
+
+.hm {
+  &-100 {
+    max-height: rem(100);
+  }
+
+  &-200 {
+    max-height: rem(200);
+  }
+
+  &-300 {
+    max-height: rem(300);
+  }
+
+  &-400 {
+    max-height: rem(400);
+  }
+
+  &-500 {
+    max-height: rem(500);
+  }
+
+  &-600 {
+    max-height: rem(600);
+  }
+
+  &-1000 {
+    max-height: rem(1000);
+  }
+}

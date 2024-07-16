@@ -1,0 +1,20 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-spin {
+    &-nested-loading .ant-spin-container::after {
+      background: $white !important;
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-spin {
+      &-nested-loading .ant-spin-container::after {
+        background: $dark !important;
+      }
+    }
+  }
+}

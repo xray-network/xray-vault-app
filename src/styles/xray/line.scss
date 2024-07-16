@@ -1,0 +1,12 @@
+@import "@/styles/mixins";
+
+.xray {
+  &-line {
+    height: 0;
+    border-bottom: 1px solid $dark-border;
+
+    &-dashed {
+      border-bottom: 1px dashed $dark-border;
+    }
+  }
+}

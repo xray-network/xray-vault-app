@@ -1,0 +1,145 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-table {
+    background: transparent !important;
+    color: $gray-5 !important;
+
+    &-column {
+      &-title {
+        flex-grow: 0 !important;
+      }
+
+      &-sorters {
+        display: inline-flex !important;
+        justify-content: initial !important;
+      }
+
+      &-sorter {
+        margin-inline-start: 6px !important;
+        color: darken($gray-3, 5%) !important;
+
+        .ant-table-column-sorter-inner {
+          .active {
+            color: $blue !important;
+          }
+        }
+      }
+    }
+
+    &-row {
+      &:hover {
+        > td {
+          background: lighten($gray-1, 2%) !important;
+        }
+      }
+    }
+
+    &-cell {
+      &-row {
+        &-hover {
+          background: lighten($gray-1, 2%) !important;
+        }
+      }
+    }
+
+    &-placeholder {
+      color: $gray-4 !important;
+      font-weight: normal !important;
+    }
+
+    &-wrapper .ant-table-tbody > tr.ant-table-placeholder {
+      background: transparent !important;
+      > td {
+        background: transparent !important;
+      }
+    }
+
+    .ant-table-thead > tr > th {
+      font-size: rem(14) !important;
+      padding: rem(14) rem(8) !important;
+    }
+
+    &-small {
+      .ant-table-cell {
+        font-size: rem(14) !important;
+      }
+    }
+
+    &-cell {
+      border-color: $border !important;
+
+      &.ant-table-column-sort {
+        background: transparent !important;
+      }
+    }
+
+    &-thead > tr > th {
+      font-weight: normal !important;
+      background: transparent !important;
+      border-color: $border !important;
+      color: $gray-5 !important;
+
+      &::before {
+        background-color: $gray-1 !important;
+        display: none !important;
+      }
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-table {
+      &-column {
+        &-sorter {
+          color: $dark-gray-3 !important;
+
+          .ant-table-column-sorter-inner {
+            .active {
+              color: $blue-light !important;
+            }
+          }
+        }
+      }
+
+      &-row {
+        &:hover {
+          > td {
+            background: darken($dark-gray-5, 3%) !important;
+          }
+        }
+      }
+
+      &-cell {
+        &-row {
+          &-hover {
+            background: darken($dark-gray-5, 3%) !important;
+          }
+        }
+      }
+
+      &-placeholder {
+        color: $dark-gray-4 !important;
+      }
+
+      &-cell {
+        border-color: $dark-border !important;
+
+        &.ant-table-column-sort {
+          background: transparent !important;
+        }
+      }
+
+      &-thead > tr > th {
+        background: transparent !important;
+        border-color: $dark-border !important;
+
+        &::before {
+          background-color: $dark-gray-5 !important;
+        }
+      }
+    }
+  }
+}

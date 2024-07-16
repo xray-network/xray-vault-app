@@ -1,0 +1,55 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-message {
+    &-notice {
+      .ant-message {
+        &-info {
+          .anticon {
+            color: $blue-light !important;
+          }
+        }
+
+        &-success {
+          .anticon {
+            color: $green !important;
+          }
+        }
+
+        &-warning {
+          .anticon {
+            color: $orange !important;
+          }
+        }
+
+        &-error {
+          .anticon {
+            color: $danger !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-message {
+      &-notice {
+        &-content {
+          background: $dark-gray-4 !important;
+          color: $white !important;
+        }
+
+        .ant-message {
+          &-info {
+            .anticon {
+              color: $blue-light !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

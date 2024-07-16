@@ -1,0 +1,31 @@
+@import "@/styles/mixins";
+
+.ri {
+  &-rotate {
+    &:before {
+      transform: rotate(45deg) !important;
+      display: inline-block;
+      font-size: 90%;
+    }
+  }
+
+  &-spin {
+    &:before {
+      display: inline-block;
+      animation: spin 1s linear infinite;
+    }
+  }
+
+  &-spin-slow {
+    &:before {
+      display: inline-block;
+      animation: spin 1.5s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

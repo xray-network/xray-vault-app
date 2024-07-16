@@ -1,0 +1,135 @@
+@import "@/styles/mixins";
+
+.w {
+  &-100p {
+    width: 100%;
+  }
+
+  &-10 {
+    width: rem(10);
+  }
+
+  &-20 {
+    width: rem(20);
+  }
+
+  &-30 {
+    width: rem(30);
+  }
+
+  &-40 {
+    width: rem(40);
+  }
+
+  &-50 {
+    width: rem(50);
+  }
+
+  &-60 {
+    width: rem(60);
+  }
+
+  &-70 {
+    width: rem(70);
+  }
+
+  &-80 {
+    width: rem(80);
+  }
+
+  &-90 {
+    width: rem(90);
+  }
+
+  &-100 {
+    width: rem(100);
+  }
+
+  &-200 {
+    width: rem(200);
+  }
+
+  &-300 {
+    width: rem(300);
+  }
+
+  &-400 {
+    width: rem(400);
+  }
+
+  &-500 {
+    width: rem(500);
+  }
+
+  &-600 {
+    width: rem(600);
+  }
+
+  &-1000 {
+    width: rem(1000);
+  }
+}
+
+.wmax {
+  &-100 {
+    max-width: rem(100);
+  }
+
+  &-200 {
+    max-width: rem(200);
+  }
+
+  &-300 {
+    max-width: rem(300);
+  }
+
+  &-400 {
+    max-width: rem(400);
+  }
+
+  &-500 {
+    max-width: rem(500);
+  }
+
+  &-600 {
+    max-width: rem(600);
+  }
+
+  &-1000 {
+    max-width: rem(1000);
+  }
+}
+
+.wmin {
+  &-100 {
+    min-width: rem(100);
+  }
+
+  &-150 {
+    min-width: rem(150);
+  }
+
+  &-200 {
+    min-width: rem(200);
+  }
+
+  &-300 {
+    min-width: rem(300);
+  }
+
+  &-400 {
+    min-width: rem(400);
+  }
+
+  &-500 {
+    min-width: rem(500);
+  }
+
+  &-600 {
+    min-width: rem(600);
+  }
+
+  &-1000 {
+    min-width: rem(1000);
+  }
+}

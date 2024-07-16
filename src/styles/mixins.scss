@@ -1,0 +1,91 @@
+// colors
+$white: #fff;
+$black: #040713;
+$blue: #1940ed;
+$blue-light: #436bfa;
+$blue-dark: #1a39c5;
+$yellow: #ff0;
+$orange: #faad15;
+$red: #dc4446;
+$pink: #fd3995;
+$purple: #652eff;
+$green: #3fcb9b;
+
+// light grays
+$gray-1: #f2f4f8;
+$gray-2: #e8e8f0;
+$gray-3: #dddfe2;
+$gray-4: #9aa0b6;
+$gray-5: #7b8199;
+$gray-6: #5a5b6e;
+
+// dark grays
+$dark-gray-1: #b6b6c5;
+$dark-gray-2: #6e758d;
+$dark-gray-3: #55556d;
+$dark-gray-4: #282d41;
+$dark-gray-5: #1e2232;
+$dark-gray-6: #0e0e18;
+
+// general
+$text: $black;
+$border: $gray-3;
+$dark-border: darken($dark-gray-4, 3%);
+
+// accent colors
+$default: $gray-4;
+$primary: $blue;
+$secondary: $gray-5;
+$success: $green;
+$info: $blue-light;
+$warning: $orange;
+$danger: $red;
+$light: $gray-1;
+$dark: $black;
+
+// font settings
+$base-font-family: "Satoshi", sans-serif;
+$base-font-size: 16 !default;
+
+// convert value of rem() sass mixin function
+@function rem($px, $base: $base-font-size) {
+  @return #{calc(floor(calc($px/$base) * 100) / 100)}rem; // to REMs
+  // @return #{$px}px; // to PX's
+}
+
+// shadows
+$light-shadow: none !important;
+$light-shadow-darken: none !important;
+$dark-shadow: none !important;
+$light-shadow:
+  0 6px 30px 0 rgba(0, 0, 0, 0.03),
+  0 3px 6px -4px rgba(0, 0, 0, 0.03),
+  0 9px 28px 8px rgba(0, 0, 0, 0.03) !important;
+$light-shadow-darken:
+  0 6px 30px 0 rgba(0, 0, 0, 0.05),
+  0 3px 6px -4px rgba(0, 0, 0, 0.06),
+  0 9px 28px 8px rgba(0, 0, 0, 0.03) !important;
+$dark-shadow: 0 0 60px 0 rgba(#1d1530, 0.9) !important;
+
+// transitions
+@mixin transition-fast() {
+  transition: all 0.05s ease-in-out;
+}
+@mixin transition-middle() {
+  transition: all 0.1s ease-in-out;
+}
+@mixin transition-slow() {
+  transition: all 0.2s ease-in-out;
+}
+
+// responsive utils
+$xxl-min-width: 1536px;
+$xxl-max-width: 1535px;
+$xl-min-width: 1280px;
+$xl-max-width: 1279px;
+$lg-min-width: 1024px;
+$lg-max-width: 1023px;
+$md-min-width: 768px;
+$md-max-width: 767px;
+$sm-min-width: 640px;
+$sm-max-width: 639px;

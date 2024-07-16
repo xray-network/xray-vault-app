@@ -1,0 +1,61 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-radio {
+    &-group {
+      .ant-radio-button-wrapper {
+        line-height: rem(30) !important;
+        height: rem(32) !important;
+      }
+
+      &-large {
+        .ant-radio-button-wrapper {
+          line-height: rem(38) !important;
+          height: rem(40) !important;
+        }
+      }
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-radio {
+      &-inner {
+        background: transparent;
+        border-color: $dark-gray-3;
+      }
+
+      &-checked {
+        .ant-radio-inner {
+          background-color: #4472d8;
+        }
+      }
+
+      &-button {
+        &-wrapper {
+          background: transparent;
+          color: $white;
+          border-color: $dark-border;
+
+          &:before {
+            background-color: $dark-border;
+          }
+
+          &-checked {
+            color: #4472d8;
+            border-color: #4472d8;
+            &:before {
+              background-color: #4472d8;
+            }
+          }
+
+          &:hover {
+            color: #4472d8;
+          }
+        }
+      }
+    }
+  }
+}

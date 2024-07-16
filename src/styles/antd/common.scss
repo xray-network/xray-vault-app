@@ -1,0 +1,31 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-collapse,
+  &-alert,
+  &-form,
+  &-form-item,
+  &-form label,
+  &-messages,
+  &-checkbox-wrapper,
+  &-radio-wrapper,
+  &-table,
+  &-modal,
+  &-modal-header,
+  &-modal-title,
+  &-modal-footer,
+  &-modal-body,
+  &-space-item,
+  &-col,
+  &-dropdown,
+  &-dropdown-menu-item,
+  &-tabs,
+  &-tabs-tab,
+  &-input-affix-wrapper-lg,
+  &-select-selector,
+  &-select-item,
+  &-table .ant-table-cell,
+  &-radio-button-wrapper {
+    font-size: rem(16) !important;
+  }
+}

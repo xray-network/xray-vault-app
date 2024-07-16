@@ -1,0 +1,56 @@
+{
+  "name": "xray-vault",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "author": "XRAY/Network <hello@xray.app>",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "GATSBY_ENV=local gatsby develop",
+    "build:local": "yarn clean && GATSBY_ENV=local gatsby build",
+    "build:dev": "yarn clean && GATSBY_ENV=dev gatsby build",
+    "build:prod": "yarn clean && GATSBY_ENV=prod gatsby build",
+    "deploy:dev": "yarn build:dev && wrangler pages deploy --project-name xray-app-dev",
+    "deploy:prod": "yarn build:prod && wrangler pages deploy",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md,mdx,scss}\""
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.6",
+    "@sentry/gatsby": "^8.16.0",
+    "@stevent-team/react-party": "^0.3.3",
+    "@tma.js/sdk-react": "^2.2.8",
+    "antd": "^5.19.0",
+    "aos": "^2.3.4",
+    "classnames": "^2.5.1",
+    "dotenv": "^16.4.5",
+    "gatsby": "next",
+    "gatsby-plugin-google-gtag": "^5.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-minify-classnames": "^5.0.0",
+    "gatsby-plugin-sass": "^6.13.1",
+    "prettier": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-redux": "^9.1.2",
+    "redux-saga": "^1.3.0",
+    "sass": "^1.77.6",
+    "store": "^2.0.12",
+    "wrangler": "^3.62.0"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@types/react-helmet": "^6.1.11",
+    "@types/store": "^2.0.5",
+    "typescript": "^5.3.3"
+  }
+}

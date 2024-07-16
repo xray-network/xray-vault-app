@@ -1,0 +1,38 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-tooltip {
+    line-height: 1.2;
+    font-size: rem(14);
+
+    &-inner {
+      background: rgba($dark, 0.85);
+      min-height: rem(32) !important;
+      min-width: rem(32) !important;
+      padding: rem(6) rem(8) !important;
+    }
+
+    &-arrow {
+      &:before {
+        background: rgba($dark, 0.85);
+      }
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-tooltip {
+      &-inner {
+        background: rgba($dark-gray-4, 0.98);
+      }
+
+      &-arrow {
+        &:before {
+          background: rgba($dark-gray-4, 0.98);
+        }
+      }
+    }
+  }
+}

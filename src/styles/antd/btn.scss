@@ -1,0 +1,39 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-btn {
+    height: rem(32);
+    font-weight: 700;
+    line-height: 1;
+    font-size: rem(14) !important;
+
+    &-sm {
+      height: rem(24);
+      font-size: rem(14) !important;
+    }
+
+    &-lg {
+      height: rem(40) !important;
+      font-size: rem(16) !important;
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-btn {
+      &-default {
+        border-color: $dark-border;
+        background: transparent;
+      }
+      &-primary {
+        background: $blue;
+
+        &:hover {
+          background: lighten($blue, 5%) !important;
+        }
+      }
+    }
+  }
+}

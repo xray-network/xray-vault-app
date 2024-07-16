@@ -1,0 +1,66 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-modal {
+    padding-bottom: rem(100);
+
+    &-header {
+      background: transparent !important;
+    }
+
+    @media (max-width: $md-max-width) {
+      padding-bottom: rem(10);
+      top: rem(10);
+      max-width: calc(100vw - rem(20));
+    }
+
+    &-close-x {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-content {
+      border: 1px solid transparent !important;
+      border-radius: rem(20) !important;
+      box-shadow: $light-shadow;
+      padding: rem(25) rem(30) !important;
+
+      @media (max-width: $md-max-width) {
+        padding: rem(15) rem(25) rem(30) !important;
+      }
+    }
+
+    &-mask {
+      background: rgba($gray-1, 0.8) !important;
+    }
+
+    &-wrap {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 0;
+        height: 0;
+        display: none;
+      }
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-modal {
+      &-content {
+        background: $dark;
+        border: 1px solid $dark-border !important;
+        box-shadow: $dark-shadow;
+      }
+
+      &-mask {
+        background: rgba($dark, 0.8) !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-input {
+    background: transparent;
+    border-color: $border;
+
+    &-disabled[disabled] {
+      background: $gray-1;
+      color: $gray-5;
+      border-color: $border;
+
+      &:hover {
+        border-color: $border;
+      }
+    }
+
+    &-affix-wrapper {
+      background: transparent;
+      border-color: $border;
+      padding: rem(4) rem(11);
+
+      &-focused {
+        border-color: $blue;
+      }
+
+      &-sm {
+        font-size: rem(14);
+        padding: rem(0) rem(7);
+      }
+
+      &-lg {
+        padding: rem(7) rem(11);
+        height: rem(40);
+      }
+    }
+
+    &-clear {
+      &-icon {
+        color: rgba($gray-5, 0.3) !important;
+
+        &:hover {
+          color: rgba($gray-5, 1) !important;
+        }
+      }
+    }
+
+    @at-root {
+      .ant-space-compact {
+        .ant-btn-lg {
+          height: 40px !important;
+        }
+      }
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-input {
+      border-color: $dark-border;
+
+      &:hover {
+        border-color: #6b97e8;
+      }
+
+      &-disabled {
+        background: $dark-gray-5;
+        color: $dark-gray-3;
+        border-color: $dark-border;
+
+        &:hover {
+          border-color: $dark-border;
+        }
+      }
+
+      &-affix-wrapper {
+        border-color: $dark-border;
+
+        &-focused {
+          border-color: #6b97e8;
+        }
+      }
+    }
+  }
+}

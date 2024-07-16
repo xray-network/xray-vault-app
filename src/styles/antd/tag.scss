@@ -1,0 +1,59 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-tag {
+    font-size: rem(12);
+
+    &-default {
+      color: $dark;
+      background: transparent;
+      border-color: $border;
+    }
+
+    &-success {
+      color: darken($success, 10%);
+      background: rgba($success, 0.02);
+      border-color: rgba($success, 0.2);
+    }
+
+    &-red {
+      color: $red;
+      background: rgba($red, 0.06);
+      border-color: rgba($red, 0.1);
+    }
+
+    &-blue {
+      color: $blue;
+      background: rgba($blue, 0.02);
+      border-color: rgba($blue, 0.2);
+    }
+
+    &-warning {
+      color: $orange;
+      background: rgba($orange, 0.02);
+      border-color: rgba($orange, 0.2);
+    }
+
+    &-borderless {
+      border-color: transparent;
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-tag {
+      &-default {
+        color: $white;
+        border-color: $dark-border;
+      }
+
+      &-blue {
+        color: $blue-light;
+        background: rgba($blue-light, 0.1);
+        border-color: rgba($blue-light, 0.2);
+      }
+    }
+  }
+}

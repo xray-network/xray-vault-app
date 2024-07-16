@@ -1,0 +1,103 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-alert {
+    &-with-description {
+      position: relative;
+
+      > .anticon {
+        position: absolute;
+        top: rem(-10);
+        left: rem(-10);
+      }
+    }
+
+    &-description {
+      font-size: rem(14);
+    }
+
+    &-message {
+      font-weight: 700;
+      margin-bottom: 0 !important;
+    }
+
+    &-info {
+      border-color: rgba($blue, 0.15);
+      background: rgba($blue, 0.01);
+
+      .ant-alert-icon {
+        color: $blue;
+      }
+    }
+
+    &-success {
+      border-color: rgba($success, 0.3);
+      background: rgba($success, 0.04);
+
+      .ant-alert-icon {
+        color: $success;
+      }
+    }
+
+    &-warning {
+      border-color: rgba($orange, 0.3);
+      background: rgba($orange, 0.04);
+
+      .ant-alert-icon {
+        color: $orange;
+      }
+    }
+
+    &-error {
+      border-color: rgba($danger, 0.2);
+      background: rgba($danger, 0.03);
+
+      .ant-alert-icon {
+        color: $danger;
+      }
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-alert {
+      &-info {
+        border-color: rgba($blue-light, 0.2);
+        background: rgba($blue-light, 0.03);
+
+        .ant-alert-icon {
+          color: $blue-light;
+        }
+      }
+
+      &-success {
+        border-color: rgba($success, 0.2);
+        background: rgba($success, 0.01);
+
+        .ant-alert-icon {
+          color: $success;
+        }
+      }
+
+      &-warning {
+        border-color: rgba($orange, 0.15);
+        background: rgba($orange, 0.02);
+
+        .ant-alert-icon {
+          color: $orange;
+        }
+      }
+
+      &-error {
+        border-color: rgba($danger, 0.2);
+        background: rgba($danger, 0.03);
+
+        .ant-alert-icon {
+          color: $danger;
+        }
+      }
+    }
+  }
+}

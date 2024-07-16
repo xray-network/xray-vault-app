@@ -1,0 +1,14 @@
+@import "@/styles/mixins";
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-collapse {
+      &-header {
+        &-text {
+          color: $white;
+        }
+      }
+    }
+  }
+}

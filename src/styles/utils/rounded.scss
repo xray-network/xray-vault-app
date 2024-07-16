@@ -1,0 +1,21 @@
+@import "@/styles/mixins";
+
+.rounded,
+button.rounded {
+  &-top {
+    &-left-none {
+      border-top-left-radius: 0 !important;
+    }
+    &-right-none {
+      border-top-right-radius: 0 !important;
+    }
+  }
+  &-bottom {
+    &-left-none {
+      border-bottom-left-radius: 0 !important;
+    }
+    &-right-none {
+      border-bottom-right-radius: 0 !important;
+    }
+  }
+}

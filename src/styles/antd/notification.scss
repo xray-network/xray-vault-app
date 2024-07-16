@@ -1,0 +1,76 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-notification {
+    &-notice {
+      &-wrapper {
+        border-radius: rem(20) !important;
+      }
+
+      &-description {
+        font-size: rem(14);
+        margin-left: 0 !important;
+      }
+
+      &-message {
+        font-weight: 700;
+        padding-top: rem(30);
+        margin-bottom: 0 !important;
+        margin-left: 0 !important;
+      }
+
+      &-info {
+        .ant-notification-notice-icon {
+          color: $blue !important;
+        }
+      }
+
+      &-success {
+        .ant-notification-notice-icon {
+          color: $success !important;
+        }
+      }
+
+      &-warning {
+        .ant-notification-notice-icon {
+          color: $orange !important;
+        }
+      }
+
+      &-error {
+        .ant-notification-notice-icon {
+          color: $danger !important;
+        }
+      }
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-notification {
+      &-notice {
+        &-close {
+          color: $dark-gray-3 !important;
+        }
+
+        &-wrapper {
+          background: $dark-gray-5;
+          color: $white;
+        }
+
+        &-message,
+        &-description {
+          color: $white !important;
+        }
+
+        &-info {
+          .ant-notification-notice-icon {
+            color: $blue-light !important;
+          }
+        }
+      }
+    }
+  }
+}

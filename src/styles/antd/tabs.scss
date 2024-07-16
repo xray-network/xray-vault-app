@@ -1,0 +1,131 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-tabs {
+    color: $text;
+
+    &-nav {
+      &-wrap {
+        &::after {
+          box-shadow: inset -10px 0 15px -8px rgba(0, 0, 0, 0.25) !important;
+        }
+        &::before {
+          box-shadow: inset 10px 0 15px -8px rgba(0, 0, 0, 0.25) !important;
+        }
+      }
+    }
+
+    &-tab {
+      font-weight: 700;
+      // color: $gray-5;
+
+      + .ant-tabs-tab {
+        margin-left: rem(25) !important;
+
+        @media (max-width: $md-max-width) {
+          margin-left: rem(35) !important;
+        }
+      }
+
+      &-btn {
+        padding-left: rem(15) !important;
+        padding-right: rem(15) !important;
+
+        // @media (max-width: $md-max-width) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        // }
+
+        &:focus {
+          color: $blue !important;
+        }
+      }
+
+      &:hover {
+        color: $blue !important;
+      }
+
+      &-disabled {
+        .ant-tabs-tab-btn {
+          color: rgba($text, 0.33) !important;
+        }
+      }
+
+      &-active {
+        .ant-tabs-tab-btn {
+          text-shadow: none !important;
+        }
+      }
+    }
+
+    &-nav {
+      margin-bottom: rem(30) !important;
+
+      &::before {
+        border-bottom-color: $border !important;
+      }
+    }
+
+    &-top,
+    &-bottom {
+      .ant-tabs-ink-bar {
+        height: 3px !important;
+      }
+    }
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-tabs {
+      color: $dark-gray-2;
+
+      &-nav {
+        &-wrap {
+          &::after {
+            box-shadow: inset -10px 0 15px -8px rgba(255, 255, 255, 0.4) !important;
+          }
+          &::before {
+            box-shadow: inset 10px 0 15px -8px rgba(255, 255, 255, 0.4) !important;
+          }
+        }
+      }
+
+      &-ink {
+        &-bar {
+          background: $white !important;
+        }
+      }
+
+      &-tab {
+        &-btn {
+          &:focus {
+            color: $white !important;
+          }
+        }
+
+        &-disabled {
+          .ant-tabs-tab-btn {
+            color: rgba($dark-gray-2, 0.4) !important;
+          }
+        }
+
+        &-active {
+          .ant-tabs-tab-btn {
+            color: $white !important;
+          }
+        }
+        &:hover {
+          color: $white !important;
+        }
+      }
+
+      &-nav {
+        &::before {
+          border-bottom-color: $dark-border !important;
+        }
+      }
+    }
+  }
+}

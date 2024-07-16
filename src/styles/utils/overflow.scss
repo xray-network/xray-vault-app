@@ -1,0 +1,11 @@
+@import "@/styles/mixins";
+
+.overflow {
+  &-hidden {
+    overflow: hidden;
+  }
+
+  &-visible {
+    overflow: visible;
+  }
+}

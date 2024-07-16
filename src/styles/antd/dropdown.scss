@@ -1,0 +1,20 @@
+@import "@/styles/mixins";
+
+.ant {
+  &-dropdown {
+    animation-duration: 0ms !important;
+  }
+}
+
+// dark theme
+[data-theme="dark"] {
+  .ant {
+    &-dropdown {
+      &-arrow {
+        &:before {
+          background: $dark-gray-4;
+        }
+      }
+    }
+  }
+}

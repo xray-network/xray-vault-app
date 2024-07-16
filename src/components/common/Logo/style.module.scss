@@ -1,0 +1,107 @@
+@import "@/styles/mixins";
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(36);
+  font-size: rem(21);
+  user-select: none;
+  line-height: 1;
+
+  svg.icon {
+    height: 100%;
+    margin-right: rem(15);
+
+    & + svg.line {
+      margin-left: rem(-5);
+    }
+
+    &Blue {
+      rect {
+        fill: $blue;
+      }
+
+      polygon {
+        fill: $white;
+      }
+    }
+
+    &Mono {
+      rect {
+        fill: $dark;
+      }
+
+      polygon {
+        fill: $white;
+      }
+    }
+
+    &White {
+      rect {
+        fill: $white;
+      }
+
+      polygon {
+        fill: $dark;
+      }
+    }
+
+    &Dark {
+      rect {
+        fill: $dark;
+      }
+
+      polygon {
+        fill: $white;
+      }
+    }
+  }
+
+  .prefix {
+    margin-right: rem(15);
+    font-family: "Archivo";
+    color: $dark;
+
+    & + svg.line {
+      margin-left: rem(-10);
+    }
+  }
+
+  svg.line {
+    margin-right: rem(5);
+    height: 80%;
+  }
+
+  .name {
+    font-family: "Archivo";
+    color: $dark;
+  }
+}
+
+[data-theme="dark"] {
+  .logo {
+    .prefix,
+    .name {
+      color: $white;
+    }
+
+    svg.icon {
+      &Mono {
+        rect {
+          fill: $white;
+        }
+
+        polygon {
+          fill: $dark;
+        }
+      }
+    }
+
+    svg.line {
+      g {
+        stroke: $dark-gray-3;
+      }
+    }
+  }
+}
