@@ -24,7 +24,7 @@ const Index = () => {
 
   return (
     <div className={style.index}>
-      <Logo hideIcon color="mono" prefix="XRAY" name="Vault" />
+      <Logo size={1.2} hideIcon color="mono" prefix="XRAY" name="Vault" />
     </div>
   )
 }

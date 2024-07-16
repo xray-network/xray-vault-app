@@ -3,20 +3,22 @@ import classnames from "classnames"
 import * as style from "./style.module.scss"
 
 const Index = ({
-  hideIcon,
+  prefix,
+  name,
+  size = 1.3,
   color = "mono",
+  hideIcon,
   hideLine,
-  prefix = "XRAY",
-  name = "App",
 }: {
-  hideIcon?: boolean
+  prefix: string
+  name: string
+  size?: number
   color?: "blue" | "white" | "dark" | "mono"
+  hideIcon?: boolean
   hideLine?: boolean
-  prefix?: string
-  name?: string
 }) => {
   return (
-    <div className={style.logo}>
+    <div className={style.logo} style={{ fontSize: `${size}em` }}>
       {!hideIcon && (
         <svg
           className={classnames(style.icon, {

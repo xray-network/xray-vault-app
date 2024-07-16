@@ -4,17 +4,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: rem(36);
-  font-size: rem(21);
   user-select: none;
   line-height: 1;
 
   svg.icon {
-    height: 100%;
-    margin-right: rem(15);
+    height: 2em;
+    margin-right: 0.6em;
 
     & + svg.line {
-      margin-left: rem(-5);
+      margin-left: -0.2em;
     }
 
     &Blue {
@@ -59,23 +57,29 @@
   }
 
   .prefix {
-    margin-right: rem(15);
+    margin-right: 0.6em;
     font-family: "Archivo";
+    font-size: 1em;
     color: $dark;
 
     & + svg.line {
-      margin-left: rem(-10);
+      margin-left: -0.4em;
+    }
+
+    & + .name {
+      margin-left: -0.4em;
     }
   }
 
   svg.line {
-    margin-right: rem(5);
-    height: 80%;
+    margin-right: 0.2em;
+    height: 1.2em;
   }
 
   .name {
     font-family: "Archivo";
     color: $dark;
+    font-size: 1em;
   }
 }
 
